@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="busd-bnb" transform="translate(-618 -291)">
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="40" height="40" transform="translate(618 291)" fill="#fff" opacity="0"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="12" cy="12" r="12" transform="translate(618 291)" fill="#2a1f6b"/>
+    <g id="binance-usd" transform="translate(619 292)">
+      <g id="Group_1" data-name="Group 1">
+        <path id="Path_1" data-name="Path 1" d="M11,0A11,11,0,1,1,0,11,11,11,0,0,1,11,0Z" fill="#f0b90b"/>
+      </g>
+      <g id="Group_2" data-name="Group 2" transform="translate(1.265 1.208)">
+        <path id="Path_2" data-name="Path 2" d="M1047.562,1064.829l-2.362-2.363,9.867-9.867,2.362,2.362Z" transform="translate(-1041.58 -1048.863)" fill="#fff"/>
+        <path id="Path_3" data-name="Path 3" d="M1464.663,1482.029l-2.363-2.362,9.867-9.867,2.362,2.362Z" transform="translate(-1455.06 -1462.443)" fill="#fff"/>
+        <path id="Path_4" data-name="Path 4" d="M1060.962,630.608l-2.362-2.362,6.246-6.246,2.363,2.362Z" transform="translate(-1054.863 -622)" fill="#fff"/>
+        <path id="Path_5" data-name="Path 5" d="M630.362,1504.924,628,1502.562l2.362-2.362,2.362,2.362Z" transform="translate(-628 -1492.579)" fill="#fff"/>
+      </g>
+    </g>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="13" cy="13" r="13" transform="translate(632 305)" fill="#2a1f6b"/>
+    <g id="Icons_Tokens_BNB" data-name="Icons/Tokens/BNB" transform="translate(633.334 306.334)">
+      <circle id="Oval" cx="12" cy="12" r="12" transform="translate(-0.334 -0.334)" fill="#f3ba2e"/>
+      <path id="Shape" d="M9.347,11.353l3.4-3.4,3.4,3.4,1.976-1.977L12.743,4,7.371,9.376l1.976,1.977M4,12.749l1.976-1.977,1.976,1.977L5.976,14.726Zm5.347,1.4,3.4,3.4,3.4-3.4,1.977,1.976h0L12.743,21.5,7.371,16.123l0,0,1.979-1.975m8.187-1.4,1.976-1.977,1.976,1.977-1.976,1.977Z" transform="translate(-1.084 -1.084)" fill="#fff"/>
+      <path id="Path" d="M21.671,19h0L19,16.329l-1.976,1.977h0l-.227.227L16.326,19l0,0,0,0L19,21.682l2.674-2.675v0h0" transform="translate(-7.337 -7.34)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
