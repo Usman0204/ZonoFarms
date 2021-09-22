@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.sweetswap.finance/#/swap',
+        href: 'http://54.201.71.1:5000/#/swap',
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.sweetswap.finance/#/pool',
+        href: 'http://54.201.71.1:5000/#/pool',
       },
     ],
   },
@@ -66,15 +66,15 @@ const config: MenuEntry[] = [
         
         {
           label: 'Github',
-          href: 'https://github.com/SweetSwap',
+          href: '',
         },
         {
           label: 'Docs',
-          href: 'https://medium.com/@SweetSwap',
+          href: '',
         },
         {
           label: 'Blog',
-          href: 'https://app.gitbook.com/@sweetswapfinance/s/sweetswap/',
+          href: '',
         },
       ],
     
