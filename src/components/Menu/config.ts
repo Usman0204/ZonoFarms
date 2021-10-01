@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'http://54.201.71.1:5000/#/swap',
+        href: 'https://zonoswap.com/#/swap',
       },
       {
         label: 'Liquidity',
-        href: 'http://54.201.71.1:5000/#/pool',
+        href: 'https://zonoswap.com/#/pool',
       },
     ],
   },
