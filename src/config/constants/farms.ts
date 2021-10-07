@@ -21,8 +21,8 @@ const farms: FarmConfig[] = [
     pid: 1,
     lpSymbol: 'ZONO-BNB LP',
     lpAddresses: {
-      97: '0xeeacDfBC337BF3CaFecF7b6726DD21fB4e8abD74',
-      56: '0xeeacDfBC337BF3CaFecF7b6726DD21fB4e8abD74',
+      97: '0xD43A29b53ab45d736bBFdc873780Db65b7c85F97',
+      56: '0xD43A29b53ab45d736bBFdc873780Db65b7c85F97',
     },
     tokenSymbol: 'ZONO',
     tokenAddresses: {
@@ -36,8 +36,8 @@ const farms: FarmConfig[] = [
     pid: 2,
     lpSymbol: 'BUSD-BNB LP',
     lpAddresses: {
-      97: '0xa5cbDE5C188165Bcd8E292422Eb91a864E9575d7',
-      56: '0xa5cbDE5C188165Bcd8E292422Eb91a864E9575d7',
+      97: '0xAAAd85A8f29499eB53880BA76488C5d24114De1c',
+      56: '0xAAAd85A8f29499eB53880BA76488C5d24114De1c',
     },
     tokenSymbol: 'BUSD',
     tokenAddresses: {
@@ -51,8 +51,8 @@ const farms: FarmConfig[] = [
     pid: 3,
     lpSymbol: 'ZONO-BUSD LP',
     lpAddresses: {
-      97: '0xF52be08D8a3ee7A7C1d8591D3E3f8D6A22019121',
-      56: '0xF52be08D8a3ee7A7C1d8591D3E3f8D6A22019121',
+      97: '0x3f2AA533e0363398d2647638308FCD152a0AdFee',
+      56: '0x3f2AA533e0363398d2647638308FCD152a0AdFee',
     },
     tokenSymbol: 'ZONO',
     tokenAddresses: {
