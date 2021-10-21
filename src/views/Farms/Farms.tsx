@@ -358,7 +358,7 @@ const Farms: React.FC = () => {
             <ToggleView viewMode={viewMode} onToggle={(mode: ViewMode) => setViewMode(mode)} />
             <ToggleWrapper>
               <Toggle checked={stackedOnly} onChange={() => setStackedOnly(!stackedOnly)} scale="sm" />
-              <Text> {TranslateString(1116, 'Staked only')}</Text>
+              <Text color="#fff"> {TranslateString(1116, 'Staked only')}</Text>
             </ToggleWrapper>
             <FarmTabButtons />
           </ViewControls>
