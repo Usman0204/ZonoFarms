@@ -193,7 +193,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
             ))}
         </StyledCardActions>
         <StyledDetails>
-          <div style={{color:'#2a1f6b'}}>{TranslateString(736, 'APR')}:</div>
+          <div style={{color:'#FCD419'}}>{TranslateString(736, 'APR')}:</div>
           {isFinished || isOldSyrup || !apy ? (
             '-'
           ) : (
@@ -201,8 +201,8 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
           )}
         </StyledDetails>
         <StyledDetails>
-          <div style={{color:'#2a1f6b'}}>{TranslateString(384, 'Your Stake')}:</div>
-          <Balance
+          <div style={{color:'#FCD419'}}>{TranslateString(384, 'Your Stake')}:</div>
+          <Balance color="#FCD419"
             fontSize="14px"
             isDisabled={isFinished}
             value={getBalanceNumber(stakedBalance, stakingTokenDecimals)}

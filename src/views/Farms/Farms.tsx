@@ -238,7 +238,7 @@ const Farms: React.FC = () => {
 
   const rowData = farmsStaked.map((farm) => {
     const { quoteTokenAdresses, quoteTokenSymbol, tokenAddresses } = farm
-    const lpLabel = farm.lpSymbol && farm.lpSymbol.split(' ')[0].toUpperCase().replace('PANCAKE', '')
+    const lpLabel = farm.lpSymbol && farm.lpSymbol.split(' ')[0].toUpperCase().replace('Zono', '')
 
     const row: RowProps = {
       apr: {
@@ -364,7 +364,7 @@ const Farms: React.FC = () => {
           </ViewControls>
           <FilterContainer>
             <LabelWrapper>
-              <Text>SORT BY</Text>
+              <Text color="#fff">SORT BY</Text>
               <Select
                 options={[
                   {
@@ -392,7 +392,7 @@ const Farms: React.FC = () => {
               />
             </LabelWrapper>
             <LabelWrapper style={{ marginLeft: 16 }}>
-              <Text>SEARCH</Text>
+              <Text color="#FFF">SEARCH</Text>
               <SearchInput onChange={handleChangeQuery} value={query} />
             </LabelWrapper>
           </FilterContainer>
