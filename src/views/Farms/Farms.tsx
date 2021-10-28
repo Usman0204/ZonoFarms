@@ -238,7 +238,7 @@ const Farms: React.FC = () => {
 
   const rowData = farmsStaked.map((farm) => {
     const { quoteTokenAdresses, quoteTokenSymbol, tokenAddresses } = farm
-    const lpLabel = farm.lpSymbol && farm.lpSymbol.split(' ')[0].toUpperCase().replace('Zono', '')
+    const lpLabel = farm.lpSymbol && farm.lpSymbol.split(' ')[0].toUpperCase().replace('Cake', '')
 
     const row: RowProps = {
       apr: {

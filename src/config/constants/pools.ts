@@ -4,12 +4,12 @@ const pools: PoolConfig[] = [
   {
     sousId: 0,
     tokenName: 'ZONO',
-    tokenAddress: '0x8620ad2ed2042df63130dab33afadb16b03a6f5d',
+    tokenAddress: '0x8d08dcb48d59216ae5d0515aa6622c9beb42b76b',
     stakingTokenName: QuoteToken.CAKE,
-    stakingTokenAddress: '0x8620ad2ed2042df63130dab33afadb16b03a6f5d',
+    stakingTokenAddress: '0x8d08dcb48d59216ae5d0515aa6622c9beb42b76b',
     contractAddress: {
-      97: '0xaff2b0031aa7a5c19c9cba9589817a704234d492',
-      56: '0xaff2b0031aa7a5c19c9cba9589817a704234d492',
+      97: '0x838648d92D314f743FE333D73bc9900e2f51D624',
+      56: '0x838648d92D314f743FE333D73bc9900e2f51D624',
     },
     poolCategory: PoolCategory.CORE,
     projectLink: 'https://pancakeswap.finance/',
