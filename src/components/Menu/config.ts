@@ -35,11 +35,11 @@ const config: MenuEntry[] = [
   //   icon: 'TicketIcon',
   //   href: '/lottery',
   // },
-  // {
-  //   label: 'Collectibles',
-  //   icon: 'NftIcon',
-  //   href: '/collectibles',
-  // },
+  {
+    label: 'NFTs (soon)',
+    icon: 'NftIcon',
+    href: '',
+  },
   // {
   //   label: 'Teams & Profile',
   //   icon: 'GroupsIcon',
@@ -66,15 +66,15 @@ const config: MenuEntry[] = [
         
         {
           label: 'Github',
-          href: '',
+          href: 'https://github.com/Zonoswap/',
         },
         {
           label: 'Docs',
-          href: '',
+          href: 'https://zonoswap.gitbook.io/zonoswap/',
         },
         {
           label: 'Blog',
-          href: '',
+          href: 'https://medium.com/@zonoswap',
         },
       ],
     
