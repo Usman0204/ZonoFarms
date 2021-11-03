@@ -35,6 +35,7 @@ const Container = styled.div`
 
 const StyledLinkExternal = styled(LinkExternal)`
   font-weight: 400;
+
 `
 
 const StakeContainer = styled.div`
@@ -62,8 +63,9 @@ const TagsContainer = styled.div`
     padding: 0 6px;
     font-size: 14px;
     margin-right: 4px;
-
+    
     svg {
+     
       width: 14px;
     }
   }

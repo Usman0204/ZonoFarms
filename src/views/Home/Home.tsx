@@ -25,7 +25,7 @@ const Hero = styled.div`
   text-align: center;
 
   ${({ theme }) => theme.mediaQueries.lg} {
-    // background-image: url('/images/pan-bg2.svg'), url('/images/pan-bg.svg');
+    background-image: url('/images/Banner.png');
     background-position: left center, right center;
     height: 165px;
     padding-top: 0;
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
         <Heading as="h1" size="xl" mb="24px" color="secondary" style={{color:'#FCD419'}}>
           {TranslateString(576, 'WELCOME TO ZONO')}
         </Heading>
-        <Text style={{color:'#fff'}}>{TranslateString(578, 'The First Automatic Liquidity Acquisition Yield Farming & AMM on Binance Smart Chain.')}</Text>
+        {/* <Text style={{color:'#fff'}}>{TranslateString(578, 'The First Automatic Liquidity Acquisition Yield Farming & AMM on Binance Smart Chain.')}</Text> */}
       </Hero>
       <div>
         <Cards>
