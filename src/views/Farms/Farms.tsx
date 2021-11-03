@@ -167,14 +167,16 @@ const Farms: React.FC = () => {
         const cakeRewardPerYear = cakeRewardPerBlock.times(BLOCKS_PER_YEAR)
 
         // cakePriceInQuote * cakeRewardPerYear / lpTotalInQuoteToken
-        let apy = cakePriceVsBNB.times(cakeRewardPerYear).div(farm.lpTotalInQuoteToken)
-
-        if (farm.quoteTokenSymbol === QuoteToken.BUSD || farm.quoteTokenSymbol === QuoteToken.UST) {
-          apy = cakePriceVsBNB.times(cakeRewardPerYear).div(farm.lpTotalInQuoteToken).times(bnbPrice)
+        let apy = cakePriceVsBNB.times(cakeRewardPerYear).div(farm.lpTotalInQuoteToken).div(100)
+        if (farm.quoteTokenSymbol === QuoteToken.BNB && farm.tokenSymbol === QuoteToken.BUSD) {
+          apy = apy.div(5)
+        }
+        else if (farm.quoteTokenSymbol === QuoteToken.BUSD || farm.quoteTokenSymbol === QuoteToken.UST) {
+          apy = cakePriceVsBNB.times(cakeRewardPerYear).div(farm.lpTotalInQuoteToken).times(bnbPrice).div(100)
         } else if (farm.quoteTokenSymbol === QuoteToken.ETH) {
-          apy = cakePrice.div(ethPriceUsd).times(cakeRewardPerYear).div(farm.lpTotalInQuoteToken)
+          apy = cakePrice.div(ethPriceUsd).times(cakeRewardPerYear).div(farm.lpTotalInQuoteToken).div(100)
         } else if (farm.quoteTokenSymbol === QuoteToken.CAKE) {
-          apy = cakeRewardPerYear.div(farm.lpTotalInQuoteToken)
+          apy = cakeRewardPerYear.div(farm.lpTotalInQuoteToken).div(1000)
         } else if (farm.dual) {
           const cakeApy =
             farm && cakePriceVsBNB.times(cakeRewardPerBlock).times(BLOCKS_PER_YEAR).div(farm.lpTotalInQuoteToken)
