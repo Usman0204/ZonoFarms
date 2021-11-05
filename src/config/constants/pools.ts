@@ -12,7 +12,7 @@ const pools: PoolConfig[] = [
       56: '0x838648d92D314f743FE333D73bc9900e2f51D624',
     },
     poolCategory: PoolCategory.CORE,
-    projectLink: 'https://pancakeswap.finance/',
+    projectLink: 'https://zonoswap.finance/',
     harvest: true,
     tokenPerBlock: '10',
     sortOrder: 1,

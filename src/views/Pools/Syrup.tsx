@@ -37,7 +37,7 @@ const Farm: React.FC = () => {
       <Hero>
         <div>
           <Heading as="h1" size="xxl" mb="16px"  style={{color:'#FCD419'}}>
-            {TranslateString(738, 'Pudding Pool')}
+            {TranslateString(738, 'Pool')}
           </Heading>
           <ul>
             <li style={{color:'#fff'}}>{TranslateString(580, 'Stake ZONO to earn new tokens.')}</li>
