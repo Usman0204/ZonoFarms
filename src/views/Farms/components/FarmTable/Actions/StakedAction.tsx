@@ -124,7 +124,7 @@ const Staked: React.FunctionComponent<FarmWithStakedValue> = ({
         <Subtle>{TranslateString(999, 'ENABLE FARM')}</Subtle>
       </ActionTitles>
       <ActionContent>
-        <Button width="100%" disabled={requestedApproval} onClick={handleApprove} variant="secondary">
+        <Button width="100%" disabled={requestedApproval} onClick={handleApprove} variant="secondary" style={{color:'#201854', border: '2px solid #201854'}}>
           {TranslateString(999, 'Enable')}
         </Button>
       </ActionContent>

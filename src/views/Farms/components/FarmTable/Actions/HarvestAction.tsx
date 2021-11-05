@@ -46,7 +46,7 @@ const HarvestAction: React.FunctionComponent<FarmWithStakedValue> = ({ pid, user
     <ActionContainer>
       <ActionTitles>
         <Title>ZONO </Title>
-        <Subtle>EARNED</Subtle>
+        <Subtle >EARNED</Subtle>
       </ActionTitles>
       <ActionContent>
         <div>
