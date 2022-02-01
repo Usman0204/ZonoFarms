@@ -4,12 +4,12 @@ const pools: PoolConfig[] = [
   {
     sousId: 0,
     tokenName: 'ZONO',
-    tokenAddress: '0x8d08dcb48d59216ae5d0515aa6622c9beb42b76b',
+    tokenAddress: '0xAc97796B45F9627e16da9C93e608579ceEb410a4',
     stakingTokenName: QuoteToken.CAKE,
-    stakingTokenAddress: '0x8d08dcb48d59216ae5d0515aa6622c9beb42b76b',
+    stakingTokenAddress: '0xAc97796B45F9627e16da9C93e608579ceEb410a4',
     contractAddress: {
-      97: '0x838648d92D314f743FE333D73bc9900e2f51D624',
-      56: '0x838648d92D314f743FE333D73bc9900e2f51D624',
+      97: '0x75cA579c1789076E19C519E911fBbb5B995dEa9B',
+      56: '0x75cA579c1789076E19C519E911fBbb5B995dEa9B',
     },
     poolCategory: PoolCategory.CORE,
     projectLink: 'https://zonoswap.finance/',
