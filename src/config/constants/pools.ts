@@ -2,7 +2,7 @@ import { PoolConfig, QuoteToken, PoolCategory } from './types'
 
 const pools: PoolConfig[] = [
   {
-    sousId: 0,
+    sousId: 1,
     tokenName: 'ZONO',
     tokenAddress: '0xAc97796B45F9627e16da9C93e608579ceEb410a4',
     stakingTokenName: QuoteToken.CAKE,

@@ -24,8 +24,8 @@ import { fetchPrices } from './prices'
 import { QuoteToken } from '../config/constants/types'
 
 const ZERO = new BigNumber(0)
-const ZERO1 = new BigNumber(0.01)
-const ZERO4 = new BigNumber(560)
+const ZERO1 = new BigNumber(0.006)
+const ZERO4 = new BigNumber(400)
 
 
 
@@ -99,13 +99,13 @@ export const usePoolFromPid = (sousId): Pool => {
 // Prices
 
 export const usePriceBnbBusd = (): BigNumber => {
-  const pid = 2 // BUSD-BNB LP
+  const pid = 3 // BUSD-BNB LP
   const farm = useFarmFromPid(pid)
-  return farm.tokenPriceVsQuote ? new BigNumber(1).div(farm.tokenPriceVsQuote) : ZERO1
+  return farm.tokenPriceVsQuote ? new BigNumber(1).div(farm.tokenPriceVsQuote) : ZERO4
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
-  const pid = 1 // CAKE-BNB LP
+  const pid = 2 // CAKE-BNB LP
   const bnbPriceUSD = usePriceBnbBusd()
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO1
@@ -116,7 +116,7 @@ export const usePriceEthBusd = (): BigNumber => {
   // const bnbPriceUSD = usePriceBnbBusd()
   // const farm = useFarmFromPid(pid)
   // return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
-  return new BigNumber(4500)
+  return new BigNumber(2700)
 }
 
 // Toasts
