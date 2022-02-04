@@ -165,14 +165,17 @@ const Farms: React.FC = () => {
         }
         const cakeRewardPerBlock = CAKE_PER_BLOCK.times(farm.poolWeight)
         const cakeRewardPerYear = cakeRewardPerBlock.times(BLOCKS_PER_YEAR)
-
+        
         // cakePriceInQuote * cakeRewardPerYear / lpTotalInQuoteToken
         let apy = cakePriceVsBNB.times(cakeRewardPerYear).div(farm.lpTotalInQuoteToken).div(40)
         if (farm.quoteTokenSymbol === QuoteToken.BNB && farm.tokenSymbol === QuoteToken.BUSD) {
-          apy = apy.div(3.5)
+          apy = apy.div(32)
+        }
+        if (farm.quoteTokenSymbol === QuoteToken.BNB && farm.tokenSymbol === QuoteToken.CAKE) {
+          apy = apy.div(50000)
         }
         else if (farm.quoteTokenSymbol === QuoteToken.BUSD || farm.quoteTokenSymbol === QuoteToken.UST) {
-          apy = cakePriceVsBNB.times(cakeRewardPerYear).div(farm.lpTotalInQuoteToken).times(bnbPrice).div(60)
+          apy = cakePriceVsBNB.times(cakeRewardPerYear).div(farm.lpTotalInQuoteToken).times(bnbPrice).div(50000)
         } else if (farm.quoteTokenSymbol === QuoteToken.ETH) {
           apy = cakePrice.div(ethPriceUsd).times(cakeRewardPerYear).div(farm.lpTotalInQuoteToken).div(100)
         } else if (farm.quoteTokenSymbol === QuoteToken.CAKE) {

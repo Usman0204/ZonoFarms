@@ -62,8 +62,8 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
   // // APY
   // const rewardTokenPrice = useGetApiPrice(tokenName)
   // const stakingTokenPrice = useGetApiPrice(stakingTokenName)
-  const rewardTokenPrice = 0.09
-  const stakingTokenPrice = 0.09
+  const rewardTokenPrice = 0.006
+  const stakingTokenPrice = 0.006
   const apy = getPoolApy(
     stakingTokenPrice,
     rewardTokenPrice,
