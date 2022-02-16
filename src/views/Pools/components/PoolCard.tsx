@@ -16,7 +16,7 @@ import { useSousHarvest } from 'hooks/useHarvest'
 import Balance from 'components/Balance'
 import { QuoteToken, PoolCategory } from 'config/constants/types'
 import { Pool } from 'state/types'
-import { useGetApiPrice } from 'state/hooks'
+import { useGetApiPrice , useGetApiPricePool} from 'state/hooks'
 import DepositModal from './DepositModal'
 import WithdrawModal from './WithdrawModal'
 import CompoundModal from './CompoundModal'
@@ -60,10 +60,9 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
   const { onReward } = useSousHarvest(sousId, isBnbPool)
 
   // // APY
-  // const rewardTokenPrice = useGetApiPrice(tokenName)
-  // const stakingTokenPrice = useGetApiPrice(stakingTokenName)
-  const rewardTokenPrice = 0.006
-  const stakingTokenPrice = 0.006
+  const rewardTokenPrice = useGetApiPricePool(tokenName)
+  const stakingTokenPrice =useGetApiPricePool(tokenName)
+
   const apy = getPoolApy(
     stakingTokenPrice,
     rewardTokenPrice,
@@ -174,10 +173,10 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
                   onClick={
                     isOldSyrup
                       ? async () => {
-                          setPendingTx(true)
-                          await onUnstake('0', stakingTokenDecimals)
-                          setPendingTx(false)
-                        }
+                        setPendingTx(true)
+                        await onUnstake('0', stakingTokenDecimals)
+                        setPendingTx(false)
+                      }
                       : onPresentWithdraw
                   }
                 >
@@ -193,7 +192,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
             ))}
         </StyledCardActions>
         <StyledDetails>
-          <div style={{color:'#FCD419'}}>{TranslateString(736, 'APR')}:</div>
+          <div style={{ color: '#FCD419' }}>{TranslateString(736, 'APR')}:</div>
           {isFinished || isOldSyrup || !apy ? (
             '-'
           ) : (
@@ -201,7 +200,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
           )}
         </StyledDetails>
         <StyledDetails>
-          <div style={{color:'#FCD419'}}>{TranslateString(384, 'Your Stake')}:</div>
+          <div style={{ color: '#FCD419' }}>{TranslateString(384, 'Your Stake')}:</div>
           <Balance color="#FCD419"
             fontSize="14px"
             isDisabled={isFinished}
