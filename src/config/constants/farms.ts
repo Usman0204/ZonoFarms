@@ -3,7 +3,7 @@ import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
   {
-    pid: 1,
+    pid: 0,
     lpSymbol: 'ZONO',
     lpAddresses: {
       97: '0xAc97796B45F9627e16da9C93e608579ceEb410a4',
@@ -18,7 +18,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
-    pid: 2,
+    pid: 1,
     lpSymbol: 'ZONO-BNB LP',
     lpAddresses: {
       97: '0x362783c55308eBd57E01B8BD332010321291e02d',
@@ -33,7 +33,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
-    pid: 3,
+    pid: 2,
     lpSymbol: 'BUSD-BNB LP',
     lpAddresses: {
       97: '0x45D11635b4701FDD9A5236971B419C6A291ADd45',
@@ -48,7 +48,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
-    pid: 4,
+    pid: 3,
     lpSymbol: 'ZONO-BUSD LP',
     lpAddresses: {
       97: '0x40F2D5a2C56cCFDd6A6f3efFB3BCAcABe8160e8A',
@@ -62,7 +62,7 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
   },
-  
+
 ]
 
 export default farms

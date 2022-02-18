@@ -27,7 +27,7 @@ const useUnstake = (pid: number) => {
   return { onUnstake: handleUnstake }
 }
 
-const SYRUPIDS = [5, 6, 3, 22, 23]
+const SYRUPIDS = [5, 0, 6, 3, 22, 23]
 
 export const useSousUnstake = (sousId) => {
   const dispatch = useDispatch()
@@ -38,8 +38,8 @@ export const useSousUnstake = (sousId) => {
 
   const handleUnstake = useCallback(
     async (amount: string, decimals: number) => {
-      if (sousId === 1) {
-        const txHash = await unstake(masterChefContract, 1, amount, account)
+      if (sousId === 0) {
+        const txHash = await unstake(masterChefContract, 0, amount, account)
         console.info(txHash)
       } else if (isOldSyrup) {
         const txHash = await sousEmegencyUnstake(sousChefContract, amount, account)

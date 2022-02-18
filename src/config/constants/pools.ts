@@ -2,14 +2,14 @@ import { PoolConfig, QuoteToken, PoolCategory } from './types'
 
 const pools: PoolConfig[] = [
   {
-    sousId: 1,
+    sousId: 0,
     tokenName: 'ZONO',
     tokenAddress: '0xAc97796B45F9627e16da9C93e608579ceEb410a4',
     stakingTokenName: QuoteToken.CAKE,
     stakingTokenAddress: '0xAc97796B45F9627e16da9C93e608579ceEb410a4',
     contractAddress: {
-      97: '0x75cA579c1789076E19C519E911fBbb5B995dEa9B',
-      56: '0x75cA579c1789076E19C519E911fBbb5B995dEa9B',
+      97: '0xd5E7a3923A71bF38860ceea0f27E9BB41FeEcDa6',
+      56: '0xd5E7a3923A71bF38860ceea0f27E9BB41FeEcDa6',
     },
     poolCategory: PoolCategory.CORE,
     projectLink: 'https://zonoswap.finance/',
