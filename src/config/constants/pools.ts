@@ -14,7 +14,7 @@ const pools: PoolConfig[] = [
     poolCategory: PoolCategory.CORE,
     projectLink: 'https://zonoswap.finance/',
     harvest: true,
-    tokenPerBlock: '10',
+    tokenPerBlock: '0.00001',
     sortOrder: 1,
     isFinished: false,
     tokenDecimals: 18,

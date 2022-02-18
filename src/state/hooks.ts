@@ -28,7 +28,6 @@ const ZERO1 = new BigNumber(0.006)
 const ZERO4 = new BigNumber(400)
 
 
-
 export const useFetchPublicData = () => {
   const dispatch = useDispatch()
   const { slowRefresh } = useRefresh()
@@ -221,8 +220,8 @@ export const useGetApiPrices = () => {
 }
 
 export const useGetApiPrice = (token: string) => {
-  const prices = useGetApiPrices()
-
+  const prices = fetchPrices()
+  console.log("Prices", prices)
   if (!prices) {
     return null
   }
@@ -230,6 +229,17 @@ export const useGetApiPrice = (token: string) => {
   return prices[token.toLowerCase()]
 }
 
+export const useGetApiPricePool = (token: string) => {
+  let price = 0.007
+   fetch('https://api.zonoswap.com/price').then(data =>  data.json() )
+   .then(data =>{
+    console.log('data"""""' , data.price)
+     price = data.price;
+  })
+return price;
+
+  // return prices[token.toLowerCase()]
+}
 // Block
 export const useBlock = (): Block => {
   return useSelector((state: State) => state.block)
